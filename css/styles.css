@@ -218,7 +218,8 @@ p {
   width: calc((100% - 72px) / 4);
 }
 
-.benefits-list-icon {
+.benefits-icon-container {
+  display: flex;
   width: 264px;
   height: 112px;
   border: 1px solid #8e8f99;
@@ -226,13 +227,14 @@ p {
   width: 264px;
   height: 112px;
   background: #f4f4fd;
+  align-items: center;
 }
 
 .benefits-icons {
-  /* display: block; */
-  /* align-items: center; */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .benefits-list-title {
   font-weight: 500;
   font-size: 20px;
