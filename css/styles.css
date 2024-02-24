@@ -99,6 +99,18 @@ button {
   color: #404bbf;
 }
 
+.studio-link::after {
+  display: block;
+  content: "";
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(25px);
+}
+
 .contact-block {
   font-style: normal;
   font-size: 16px;
@@ -122,6 +134,12 @@ button {
   background-color: #2e2f42;
   color: #fff;
   padding: 188px 0;
+  background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(/images/hero/hero-bg.jpg);
+  background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-title {
@@ -198,6 +216,21 @@ p {
 
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
+}
+
+.benefits-list-icon {
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+}
+
+.benefits-icons {
+  /* display: block; */
+  /* align-items: center; */
 }
 
 .benefits-list-title {
