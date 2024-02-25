@@ -37,6 +37,10 @@ button {
   color: inherit;
 }
 
+.social-media-icon {
+  fill: #ffffff;
+}
+
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -88,6 +92,7 @@ button {
   padding-bottom: 24px;
   padding-top: 24px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link-active {
@@ -99,16 +104,20 @@ button {
   color: #404bbf;
 }
 
+.studio-link {
+  position: relative;
+  color: #404bbf;
+}
+
 .studio-link::after {
-  display: block;
+  position: absolute;
   content: "";
   border-radius: 2px;
-  width: 48px;
+  width: 100%;
   height: 4px;
+  left: 0;
+  bottom: -1px;
   background-color: #404bbf;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(25px);
 }
 
 .contact-block {
@@ -123,6 +132,10 @@ button {
 .contact-list {
   display: flex;
   gap: 40px;
+}
+
+.contact-list-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list-link:hover,
@@ -170,6 +183,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-btn:hover,
@@ -324,6 +338,12 @@ p {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-socialmedia-container:hover,
+.team-socialmedia-container:focus {
+  background-color: #31d0aa;
 }
 
 .portfolio {
@@ -406,6 +426,12 @@ p {
 }
 
 .footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo-contrainer {
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -431,16 +457,34 @@ p {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.footer-socialmedia-list {
-  display: flex;
+
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
 
-.footer-socialmedia-container {
+.footer-social-media-list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.footer-social-media-container {
   display: flex;
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 100%;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  fill: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-media-container:hover,
+.footer-social-media-container:focus {
+  background-color: #31d0aa;
 }
