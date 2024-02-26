@@ -250,13 +250,6 @@ p {
   margin-bottom: 8px;
 }
 
-.krugdiv {
-  width: 20px;
-  height: 20px;
-  background-color: aqua;
-  border-radius: 100%;
-}
-
 .benefits-icons {
   display: flex;
 }
@@ -355,7 +348,7 @@ p {
 
 .team-socialmedia-link:hover,
 .team-socialmedia-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .portfolio {
