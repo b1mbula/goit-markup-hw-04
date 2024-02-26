@@ -425,7 +425,6 @@ p {
 
 .portfolio-list-item:hover .portfolio-overlay-text {
   transform: translateY(0%);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-footer {
@@ -477,10 +476,10 @@ p {
 
 .footer-social-media-list {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 }
 
-.footer-social-media-container {
+.footer-social-media-link {
   display: flex;
   width: 40px;
   height: 40px;
@@ -492,7 +491,7 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-media-container:hover,
-.footer-social-media-container:focus {
+.footer-social-media-link:hover,
+.footer-social-media-link:focus {
   background-color: #31d0aa;
 }
